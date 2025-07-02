@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.primary-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(200, 192, 192);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  margin: 0px 10px;
+  transform: scale(1.2);
+}
+
+.keep-logo {
+  width: 2.5rem;
+  margin: 0px 10px;
+}
+
+.keep-heading {
+  font-size: 1.5rem;
+  margin: 0px 10px;
+  color: rgb(111, 109, 109);
+}
+
+.left-heading-part {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  margin-left: 5rem;
+}
+.search-container .search-button,
+.search-container .close-button,
+.search-container input {
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  outline: none;
+  background-color: #f0f0f0;
+  font-size: 1.2rem;
+  border: none;
+}
+.search-container .search-button {
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.search-container input {
+  width: 40rem;
+}
+.search-container .close-button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  margin-left: 17rem;
+}
+.icons .right-icons,
+.icons .left-icons {
+  display: flex;
+  align-items: center;
+}
+.icons .right-icons {
+  margin-left: 1.1rem;
+}
+.icons i {
+  font-size: 1.5rem;
+  margin: 0px 20px;
+}
+
+.icon-image {
+  border-radius: 50px;
+  width: 2.5rem;
+}
+
+.navigation div:first-child {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #feefc3;
+}
+.navigation div {
+  margin-top: 5px;
+  width: 20rem;
+  padding: 15px 0px;
+}
+.navigation div i {
+  padding-left: 1.2rem;
+  font-size: 1.3rem;
+}
+.navigation div span {
+  font-size: 1.1rem;
+  margin: 10px 30px;
+}
+.navigation div:hover {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #ccc;
+}
+
+.secondary-container {
+  display: flex;
+  width: 100%;
+}
+
+.main-body {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.body-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body-search-bar input,
+.body-search-bar button {
+  border: 1px solid #ccc;
+  padding: 15px 20px;
+  outline: none;
+  background-color: white;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(150, 150, 150);
+}
+.body-search-bar input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 28rem;
+  border-top: 0.1rem solid rgb(231, 227, 227);
+  border-left: 0.1rem solid rgb(231, 227, 227);
+}
+.body-search-bar .brush-btn, .body-search-bar .check-btn {
+  border-top: 0.1rem solid rgb(231, 227, 227);
+}
+.body-search-bar button:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 0.1rem solid rgb(231, 227, 227);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.content i {
+  font-size: 10rem;
+  color: rgb(234, 231, 231);
+}/*# sourceMappingURL=keep.css.map */

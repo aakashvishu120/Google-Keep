@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+$size1: 1.2rem;
+$size2: 2.5rem;
+$nav-bg-color: #feefc3;
+$btn-color: #ccc;
+$border-style : 0.1rem solid rgb(231, 227, 227);
+
+@mixin common-code($val1: 1.5rem, $val2: 0px, $val3: 10px) {
+    font-size: $val1;
+    margin: $val2 $val3;
+}
+
+@mixin flex-ycenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin border-right($val1, $val2) {
+    border-top-right-radius: $val1;
+    border-bottom-right-radius: $val2;
+}
+
+@mixin border-left($val1, $val2) {
+    border-top-left-radius: $val1;
+    border-bottom-left-radius: $val2;
+}
+
+.primary-container {
+    @include flex-ycenter();
+    border-bottom: 1px solid rgb(200, 192, 192);
+}
+
+.header {
+    @include flex-ycenter();
+    padding: $size1;
+}
+
+.menu-icon {
+    @include common-code();
+    transform: scale(1.2);
+}
+
+.keep-logo {
+    width: $size2;
+    margin: 0px 10px;
+}
+
+.keep-heading {
+    @include common-code();
+    color: rgb(111, 109, 109);
+}
+
+.left-heading-part {
+    @include flex-ycenter();
+}
+
+.search-container {
+    display: flex;
+    margin-left: $size2 + $size2;
+
+    .search-button,
+    .close-button,
+    input {
+        border: 1px solid $btn-color;
+        padding: 15px 20px;
+        outline: none;
+        background-color: #f0f0f0;
+        font-size: $size1;
+        border: none;
+    }
+
+    .search-button {
+        cursor: pointer;
+        @include border-left(10px, 10px);
+    }
+
+    input {
+        width: 40rem;
+    }
+
+    .close-button {
+        @include border-right(10px, 10px);
+        cursor: pointer;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+    margin-left: 17rem;
+
+    .right-icons,
+    .left-icons {
+        @include flex-ycenter();
+    }
+
+    .right-icons {
+        margin-left: 1.1rem;
+    }
+
+    i {
+        @include common-code($val3: 20px);
+    }
+}
+
+.icon-image {
+    border-radius: 50px;
+    width: $size2;
+}
+
+.navigation {
+    div:first-child {
+        @include border-right(50px, 50px);
+        background-color: $nav-bg-color;
+    }
+
+    div {
+        margin-top: 5px;
+        width: 20rem;
+        padding: 15px 0px;
+
+        i {
+            padding-left: $size1;
+            font-size: 1.3rem;
+        }
+
+        span {
+            @include common-code(1.1rem, 10px, 30px);
+        }
+    }
+
+    div:hover {
+        @include border-right(50px, 50px);
+        background-color: $btn-color;
+    }
+}
+
+.secondary-container {
+    display: flex;
+    width: 100%;
+}
+
+.main-body {
+    padding-top: 20px;
+    width: 100%;
+}
+
+.body-search-bar {
+    @include flex-ycenter();
+    justify-content: center;
+
+    input,
+    button {
+        border: 1px solid $btn-color;
+        padding: 15px 20px;
+        outline: none;
+        background-color: white;
+        font-size: $size1;
+        border: none;
+        box-shadow: 5px 5px 5px rgb(150, 150, 150);
+    }
+
+    input {
+        @include border-left(10px, 10px);
+        width: 28rem;
+        border-top: $border-style;
+        border-left :$border-style;
+    }
+
+    .brush-btn , .check-btn{
+        border-top: $border-style;
+    }
+
+    button:last-child {
+        @include border-right(10px, 10px);
+        border-top :$border-style;
+    }
+}
+
+// .large-bulb {
+//     font-size: 10rem;
+//     color: rgb(234, 231, 231);
+// }
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    i {
+        font-size: 10rem;
+        color: rgb(234, 231, 231);
+    }
+}
