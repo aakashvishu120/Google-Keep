@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+$color-blue: #4285f4;
+$color-red: #ea4335;
+$color-yellow: #fbbc05;
+$color-green: #34a853;
+$color-darkblue : #4051B2;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    width: 35rem;
+    margin: 5rem auto;
+    border-radius: 10px;
+}
+
+.google {
+    display: flex;
+    margin-top: 5rem;
+    font-size: 3rem;
+
+    span {
+        margin: 0;
+        padding: 0;
+    }
+
+    span:nth-child(1),
+    span:nth-child(4) {
+        color: $color-blue;
+    }
+
+    span:nth-child(2),
+    span:nth-child(6) {
+        color: $color-red;
+    }
+
+    span:nth-child(3) {
+        color: $color-yellow;
+    }
+
+    span:nth-child(5) {
+        color: $color-green;
+    }
+}
+
+.login {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.desc {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.input-fields {
+    input {
+        border-radius: 10px;
+        padding: 15px 15px;
+        margin: 35px auto;
+        display: block;
+        width: 22rem;
+        font-size: 1.2rem;
+        border-color: rgb(214, 203, 203);
+    }
+}
+
+.footer-section {
+    width: 65%;
+    p {
+        color: $color-darkblue;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 40px auto;
+
+    span {
+        color: $color-darkblue;
+        display: block;
+    }
+
+    button {
+        background-color: $color-darkblue;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 5px;
+        display: block;
+        font-size: 1.2rem;
+        border: none;
+    }
+}
